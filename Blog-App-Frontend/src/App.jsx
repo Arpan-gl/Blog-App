@@ -8,6 +8,7 @@ import {Outlet} from "react-router";
 function App() {
   const [loading,setLoading] = useState(true);
   const dispatch = useDispatch();
+  
   useEffect(()=>{
     authService.getCurrentUser()
     .then((userData)=>{
@@ -17,7 +18,7 @@ function App() {
         dispatch(logout());
       }
     })
-    .catch((error)=>dispatch(logout()))
+    .catch((error)=>console.log("Please Login User:",error))
     .finally(()=>setLoading(false));
   },[]);
 
