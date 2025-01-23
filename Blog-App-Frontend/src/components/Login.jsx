@@ -10,7 +10,7 @@ function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
-  cosnt[(error, setError)] = useState("");
+  const [error, setError] = useState("");
 
   const login = async (data) => {
     setError("");
@@ -36,7 +36,7 @@ function Login() {
             <Logo width="100%" />
           </span>
         </div>
-        <h2 className="text-center text-2xl font-bold leading-tight">
+        <h2 className="text-center text-2xl font-bold leading-tight text-black/50">
           Sign in to your account
         </h2>
         <p className="mt-2 text-center text-base text-black/60">
@@ -72,8 +72,7 @@ function Login() {
                 required: true,
               })}
             />
-            <Button type="submit" className="w-full">
-              Sign in
+            <Button type="submit" className="w-full" text="Sign in">
             </Button>
           </div>
         </form>

@@ -6,7 +6,7 @@ function Select({
     className="",
     ...props
 },ref) {
-    const id =useId();
+    const id = useId();
 
   return (
     <div className='w-full'>

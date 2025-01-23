@@ -38,7 +38,7 @@ function SignUp() {
             <Logo width="100%" />
           </span>
         </div>
-        <h2 className="text-center text-2xl font-bold leading-tight">
+        <h2 className="text-center text-2xl font-bold leading-tight text-black/50">
           Sign up to create account
         </h2>
         <p className="mt-2 text-center text-base text-black/60">
@@ -82,8 +82,7 @@ function SignUp() {
                 required: true,
               })}
             />
-            <Button type="submit" className="w-full">
-              Create Account
+            <Button type="submit" className="w-full" text="Create Account">
             </Button>
           </div>
         </form>
