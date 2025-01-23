@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container,PostCard } from '../components/index';
+import service from '../appwrite/config';
 
 function Home() {
   const [posts,setPosts] = React.useState([]);

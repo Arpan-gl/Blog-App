@@ -8,7 +8,7 @@ import { login } from "../store/authSlice";
 
 function SignUp() {
   const dispatch = useDispatch();
-  const nagigate = useNavigate();
+  const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState("");
 
@@ -19,8 +19,8 @@ function SignUp() {
       if (userData) {
         const CurrentUserData = await authService.getCurrentUser();
         if (CurrentUserData) {
-          dispatch(login({ userData }));
-          nagigate("/");
+          dispatch(login({ CurrentUserData }));
+          navigate("/");
         }
       }
     } catch (error) {

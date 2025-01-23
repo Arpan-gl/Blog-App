@@ -4,7 +4,7 @@ import { Link,useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 
 function Header() {
-  const authStatus = useSelector((state)=>state.auth.status);
+  const authStatus = useSelector((state)=>state.status);
   const navigate = useNavigate();
 
   const navList = [
@@ -20,7 +20,7 @@ function Header() {
     },
     {
       name: "Signup",
-      slug: "/signup",
+      slug: "/SignUp",
       active: !authStatus,
     },
     {

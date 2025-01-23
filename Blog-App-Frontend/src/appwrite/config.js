@@ -29,7 +29,7 @@ export class Service{
                 }
             );
         } catch (error) {
-            console.log("Appwrite service :: createPost :: error:",error);
+            console.error("Appwrite service :: createPost :: error:",error);
         }
     }
 
@@ -47,7 +47,7 @@ export class Service{
                 }
             );
         } catch (error) {
-            console.log("Appwrite service :: updatePost :: error:",error);
+            console.error("Appwrite service :: updatePost :: error:",error);
         }
     }
 
@@ -60,7 +60,7 @@ export class Service{
             );
             return true;
         } catch (error) {
-            console.log("Appwrite service :: delete :: error:",error);
+            console.error("Appwrite service :: delete :: error:",error);
             return false;
         }
     }
@@ -73,7 +73,7 @@ export class Service{
                 slug
             );
         } catch (error) {
-            console.log("Appwrite service :: getPost :: error:",error);
+            console.error("Appwrite service :: getPost :: error:",error);
             return false;
         }
     }
@@ -86,7 +86,7 @@ export class Service{
                 queries
             );
         } catch (error) {
-            console.log("Appwrite service :: getAllPosts :: error:",error);
+            console.error("Appwrite service :: getAllPosts :: error:",error);
             return false;
         }
     }
@@ -101,7 +101,7 @@ export class Service{
                 file
             );
         } catch (error) {
-            console.log("Appwrite service :: uploadFile :: error:",error);
+            console.error("Appwrite service :: uploadFile :: error:",error);
             return false;
         }
     }
@@ -114,7 +114,7 @@ export class Service{
             );
             return true;
         } catch (error) {
-            console.log("Appwrite service :: deleteFile :: error:",error);
+            console.error("Appwrite service :: deleteFile :: error:",error);
             return false;
         }
     }

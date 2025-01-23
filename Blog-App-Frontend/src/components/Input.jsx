@@ -2,7 +2,7 @@ import React,{forwardRef, useId} from 'react';
 
 const Input = forwardRef(function Input({
     label,
-    text="text",
+    type="text",
     className="",
     ...props
 },ref){

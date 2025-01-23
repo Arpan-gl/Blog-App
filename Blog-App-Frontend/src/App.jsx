@@ -18,7 +18,6 @@ function App() {
         dispatch(logout());
       }
     })
-    .catch((error)=>console.log("Please Login User:",error))
     .finally(()=>setLoading(false));
   },[]);
 
