@@ -15,7 +15,7 @@ function PostForm({post}) {
     }
   });
   const navigate = useNavigate();
-  const userData = useSelector((state) => state.user);
+  const userData = useSelector((state) => state.userData);
 
   const onSubmit = async (data) => {
     if(post){
